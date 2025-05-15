@@ -7,7 +7,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="bg-white py-4">
+    <nav className="bg-white">
       <header className="fixed w-[100%] top-0 z-50 bg-white shadow">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-3 py-3">
           <Link to="/" className="flex items-center space-x-2">
