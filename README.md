@@ -101,7 +101,9 @@ npm start
 - cd Frontend
 - npm install
 - Create `.env` with:
-- VITE_API_BASE_URL=http://localhost:4000
+```bash
+    VITE_API_BASE_URL=http://localhost:4000
+```
 - npm run dev
 
 ### Best Practices Followed
