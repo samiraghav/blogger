@@ -60,16 +60,16 @@ A full-stack multi-user blogging platform built with the MERN stack (MongoDB, Ex
 ## Folder Structure
 
 ### Backend (`/backend`)
-### /config → DB connection & JWT config
-### /controllers → Business logic for blogs and auth
-### /models → Mongoose models (User, Blog)
-### /routes → API routes (auth, blogs)
-### /middleware → Auth protection middleware
-### Frontend (`/frontend`)
-### /features → Redux slices and API logic
-### /components → Reusable UI components (BlogCard, Filter, Navbar, etc.)
-### /pages → Route pages: Login, Signup, Blogs, MyBlogs, Edit, Create
-### /utils → Formatters and helpers
+- **/config → DB connection & JWT config
+- **/controllers → Business logic for blogs and auth
+- **/models → Mongoose models (User, Blog)
+- **/routes → API routes (auth, blogs)
+- **/middleware → Auth protection middleware
+- ** Frontend (`/frontend`)
+- **/features → Redux slices and API logic
+- **/components → Reusable UI components (BlogCard, Filter, Navbar, etc.)
+- **/pages → Route pages: Login, Signup, Blogs, MyBlogs, Edit, Create
+- **/utils → Formatters and helpers
 
 ---
 
