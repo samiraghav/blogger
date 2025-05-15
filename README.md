@@ -6,9 +6,10 @@ A full-stack multi-user blogging platform built with the MERN stack (MongoDB, Ex
 
 ## Live Demo & Repository
 
-- 🌐 **Deployed App**: [https://your-deployment-link.com](https://your-deployment-link.com)
-- 📦 **Frontend Repo**: [https://github.com/yourusername/mern-blog-frontend](https://github.com/yourusername/mern-blog-frontend)
-- 🛠️ **Backend Repo**: [https://github.com/yourusername/mern-blog-backend](https://github.com/yourusername/mern-blog-backend)
+- **Deployed App**: [https://blogger-nine-taupe.vercel.app/](https://blogger-nine-taupe.vercel.app/)
+- **Deployed Backend**: [https://blogger-enky.onrender.com/](https://blogger-enky.onrender.com/)
+- **Frontend Repo**: [https://github.com/samiraghav/blogger/tree/main/Frontend](https://github.com/samiraghav/blogger/tree/main/Frontend)
+- **Backend Repo**: [https://github.com/samiraghav/blogger/tree/main/Backend](https://github.com/samiraghav/blogger/tree/main/Backend)
 
 ---
 
@@ -60,16 +61,16 @@ A full-stack multi-user blogging platform built with the MERN stack (MongoDB, Ex
 ## Folder Structure
 
 ### Backend (`/backend`)
-- **/config → DB connection & JWT config
-- **/controllers → Business logic for blogs and auth
-- **/models → Mongoose models (User, Blog)
-- **/routes → API routes (auth, blogs)
-- **/middleware → Auth protection middleware
-- ** Frontend (`/frontend`)
-- **/features → Redux slices and API logic
-- **/components → Reusable UI components (BlogCard, Filter, Navbar, etc.)
-- **/pages → Route pages: Login, Signup, Blogs, MyBlogs, Edit, Create
-- **/utils → Formatters and helpers
+- /config → DB connection & JWT config
+- /controllers → Business logic for blogs and auth
+- /models → Mongoose models (User, Blog)
+- /routes → API routes (auth, blogs)
+- /middleware → Auth protection middleware
+- /Frontend (`/frontend`)
+- /features → Redux slices and API logic
+- /components → Reusable UI components (BlogCard, Filter, Navbar, etc.)
+- /pages → Route pages: Login, Signup, Blogs, MyBlogs, Edit, Create
+- /utils → Formatters and helpers
 
 ---
 
@@ -77,38 +78,40 @@ A full-stack multi-user blogging platform built with the MERN stack (MongoDB, Ex
 
 ### 1. Clone Repositories
 ```bash
-git clone https://github.com/yourusername/mern-blog-backend
-git clone https://github.com/yourusername/mern-blog-frontend
+git clone https://github.com/samiraghav/blogger/tree/main/Frontend
+git clone https://github.com/samiraghav/blogger/tree/main/Frontend
 ```
 
 ### 2. Backend Setup
 
 cd mern-blog-backend
 npm install
-# Create `.env` with:
-# MONGO_URI=xx
-# PORT=4000
-# JWT_SECRET=xx
-# CLOUDINARY_CLOUD_NAME=xx
-# CLOUDINARY_API_KEY=xx
-# CLOUDINARY_API_SECRET=xx
+- Create `.env` with:
+```bash
+    MONGO_URI=xx
+    PORT=4000
+    JWT_SECRET=xx
+    CLOUDINARY_CLOUD_NAME=xx
+    CLOUDINARY_API_KEY=xx
+    CLOUDINARY_API_SECRET=xx
+```
 
 npm run dev
 
 ### 3. Frontend Setup
-cd mern-blog-frontend
-npm install
-# Create `.env` with:
-# VITE_API_BASE_URL=http://localhost:5000
-npm run dev
+- cd mern-blog-frontend
+- npm install
+- Create `.env` with:
+- VITE_API_BASE_URL=http://localhost:5000
+- npm run dev
 
 ### Best Practices Followed
-# Modular, clean MVC structure
+- Modular, clean MVC structure
 
-# Proper use of HTTP status codes
+- Proper use of HTTP status codes
 
-# Protected routes with access control
+- Protected routes with access control
 
-# Responsive and accessible UI
+- Responsive and accessible UI
 
-# Git used for version control with meaningful commits
+- Git used for version control with meaningful commits
