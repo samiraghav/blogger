@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://blogger-nine-taupe.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -23,17 +23,6 @@ app.use(
 app.use(express.json());
 
 app.use('/api', routes);
-
-app.use((req, res, next) => {
-  console.log('Incoming request from origin:', req.headers.origin);
-  next();
-});
-
-
-app.get('/api/ping', (req, res) => {
-  res.json({ msg: 'pong' });
-});
-
 
 app.use(errorHandler);
 
