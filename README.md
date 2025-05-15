@@ -78,13 +78,12 @@ A full-stack multi-user blogging platform built with the MERN stack (MongoDB, Ex
 
 ### 1. Clone Repositories
 ```bash
-git clone https://github.com/samiraghav/blogger/tree/main/Frontend
-git clone https://github.com/samiraghav/blogger/tree/main/Frontend
+git clone https://github.com/samiraghav/blogger
 ```
 
 ### 2. Backend Setup
 
-cd mern-blog-backend
+cd Backend
 npm install
 - Create `.env` with:
 ```bash
@@ -96,13 +95,13 @@ npm install
     CLOUDINARY_API_SECRET=xx
 ```
 
-npm run dev
+npm start
 
 ### 3. Frontend Setup
-- cd mern-blog-frontend
+- cd Frontend
 - npm install
 - Create `.env` with:
-- VITE_API_BASE_URL=http://localhost:5000
+- VITE_API_BASE_URL=http://localhost:4000
 - npm run dev
 
 ### Best Practices Followed
