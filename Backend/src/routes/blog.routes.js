@@ -6,12 +6,14 @@ import {
   updateBlog,
   deleteBlog,
   getBlogs,
+  getBlogById
   // getMyBlogs,
 } from '../controllers/blog.controller.js';
 
 const router = express.Router();
 
 router.get('/', protect, getBlogs);
+router.get('/:id', protect, getBlogById); 
 
 router.post('/', protect, upload.single('image'), createBlog);
 router.put('/:id', protect, upload.single('image'), updateBlog);

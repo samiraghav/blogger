@@ -98,6 +98,18 @@ export const getBlogs = async (req, res, next) => {
     }
 };
 
+export const getBlogById = async (req, res, next) => {
+  try {
+    const blog = await Blog.findById(req.params.id);
+    if (!blog) {
+      return res.status(404).json({ message: 'Blog not found' });
+    }
+    res.status(200).json(blog);
+  } catch (error) {
+    next(error);
+  }
+};
+
 // /**
 //  * Retrieves blogs created by the currently authenticated user.
 //  * Currently commented out – could be used for a “My Blogs” page.
