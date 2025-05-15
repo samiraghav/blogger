@@ -25,7 +25,7 @@ const Home = () => {
         Read, filter, and create blogs that matter.
       </p>
 
-      <div className="mb-10 p-6 rounded-xl">
+      <div className="mb-10 rounded-xl">
         <BlogFilter onFilter={handleFilter} />
       </div>
 
