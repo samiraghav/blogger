@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="max-w-6xl mx-auto px-6 py-12 mt-6">
       <h1 className="text-4xl font-extrabold mb-6 text-center text-gray-800 tracking-tight">
         Explore <span className="text-red-600">Blogs</span>
       </h1>

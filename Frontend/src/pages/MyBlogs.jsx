@@ -41,8 +41,8 @@ const MyBlogs = () => {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
-      <h2 className="text-3xl text-center font-bold text-gray-700 mb-6">My Blogs</h2>
+    <div className="max-w-5xl mx-auto px-4 py-10 mt-6">
+      <h2 className="text-3xl text-center font-bold text-gray-700 mb-6 mt-6">My Blogs</h2>
 
       {blogs.filter(blog => blog.userId === user?._id).length === 0 ? (
         <div className="text-gray-600 text-center text-lg">
@@ -67,12 +67,12 @@ const MyBlogs = () => {
                 <img
                   src={blog.image || noImage}
                   alt="thumbnail"
-                  className="w-full h-auto object-cover rounded-[20px] mb-3"
+                  className="w-full h-[56.25%] object-cover rounded-[20px] mb-3"
                 />
                 <div
-                  className="text-gray-600 text-sm line-clamp-4 mb-4"
+                  className="text-gray-600 text-sm line-clamp-4 mt-5 mb-4"
                   dangerouslySetInnerHTML={{
-                    __html: blog.content.substring(0, 150) + "...",
+                    __html: blog.content.substring(0, 250) + "...",
                   }}
                 />
                 <div className="mt-auto flex justify-between w-full">
